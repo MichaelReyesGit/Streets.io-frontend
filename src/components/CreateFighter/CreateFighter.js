@@ -130,7 +130,7 @@ function CreateFighter() {
             />
           </div>
           <div className="col-12">
-            <button type="submit" className="btn btn-outline-dark">
+            <button type="submit" className="btn btn-outline-light">
               Submit
             </button>
           </div>
