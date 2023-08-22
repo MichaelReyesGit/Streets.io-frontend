@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams, useNavigate, Link } from "react-router-dom";
+import "./Fighter.css";
 
 function Fighter() {
   let url = process.env.REACT_APP_API_URL;

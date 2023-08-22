@@ -1,3 +1,7 @@
+.card {
+  color: black;
+}
+
 .loader,
 .loader:before,
 .loader:after {
