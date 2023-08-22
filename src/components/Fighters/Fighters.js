@@ -66,10 +66,6 @@ function Fighters() {
             <div className="card-body">
               <h3 className="card-title">{fighter.name}</h3>
               <p className="card-text">Difficulty: {fighter.difficulty}/5</p>
-              <p className="card-text">HP: {fighter.hp}</p>
-              <p className="card-text">
-                Character Type: {fighter.character_type}
-              </p>
               <Link
                 to={`/fighters/${fighter.id}`}
                 className="btn btn-outline-dark"
