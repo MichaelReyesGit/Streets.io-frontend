@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Nav.css";
 
 function Nav() {
+  const [audio] = useState(
+    new Audio("/Street Fighter 6 OST - Fighting Ground Theme.mp3")
+  );
+
+  const toggleAudioPlayback = () => {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  };
   return (
     <div>
       <nav className="navbar bg-body-tertiary my-3">
@@ -34,6 +46,7 @@ function Nav() {
                 About Us
               </Link>
             </div>
+            <button onClick={toggleAudioPlayback}>Hit The Streets!</button>
           </div>
           <Link to={"/"} className="navbar-brand image">
             <img

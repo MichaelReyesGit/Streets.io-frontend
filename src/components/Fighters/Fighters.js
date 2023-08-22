@@ -9,6 +9,21 @@ function Fighters() {
   const [fightersData, setFightersData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    async function getFightersData() {
+      try {
+        setLoading(true);
+        let result = await axios.get(`${url}/fighters`);
+        setFightersData(result.data);
+        setLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    getFightersData();
+  }, []);
+
   async function getFightersData() {
     try {
       setLoading(true);
