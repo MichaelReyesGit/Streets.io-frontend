@@ -1,0 +1,34 @@
+.my-btn {
+  border: 2px solid #7633f9;
+  color: #7633f9;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.my-btn:hover {
+  background-color: #7633f94b;
+}
+
+.bi {
+  color: #7633f9;
+}
+.nav-img {
+  width: 100px;
+  height: auto;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: none;
+  left: 0;
+}
+
+.dropdown-item {
+  color: #7633f9;
+}
+
+.dropdown-item:hover {
+  background-color: #7633f94b;
+}
